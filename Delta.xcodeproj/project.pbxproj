@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87159745226281FC0082197A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159744226281FC0082197A /* AppDelegate.swift */; };
+		8715974C226281FD0082197A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8715974B226281FD0082197A /* Assets.xcassets */; };
+		8715974F226281FD0082197A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8715974D226281FD0082197A /* LaunchScreen.storyboard */; };
+		8715975A226281FD0082197A /* DeltaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159759226281FD0082197A /* DeltaTests.swift */; };
+		87159768226285460082197A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159767226285460082197A /* MovieListViewController.swift */; };
+		8715976E2262880F0082197A /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715976D2262880F0082197A /* UIView+Layout.swift */; };
+		8715977822628B530082197A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715977722628B530082197A /* Movie.swift */; };
+		8715977A22628C090082197A /* MovieListDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715977922628C090082197A /* MovieListDisplayModel.swift */; };
+		8715977D226290530082197A /* URL+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715977C226290530082197A /* URL+Static.swift */; };
+		87159781226292360082197A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159780226292360082197A /* NetworkService.swift */; };
+		871597832262925C0082197A /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597822262925C0082197A /* APIKey.swift */; };
+		871597A4226293460082197A /* Promise+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159786226293460082197A /* Promise+Retry.swift */; };
+		871597A5226293460082197A /* PromiseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159787226293460082197A /* PromiseState.swift */; };
+		871597A6226293460082197A /* Promise+Recover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159788226293460082197A /* Promise+Recover.swift */; };
+		871597A7226293460082197A /* Promise+Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159789226293460082197A /* Promise+Race.swift */; };
+		871597A8226293460082197A /* Promise+Finally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715978A226293460082197A /* Promise+Finally.swift */; };
+		871597A9226293460082197A /* Promise+BridgeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715978B226293460082197A /* Promise+BridgeError.swift */; };
+		871597AA226293460082197A /* Await+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715978D226293460082197A /* Await+Operators.swift */; };
+		871597AB226293460082197A /* WhenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715978E226293460082197A /* WhenAll.swift */; };
+		871597AC226293460082197A /* PromiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715978F226293460082197A /* PromiseError.swift */; };
+		871597AD226293460082197A /* Promise+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159790226293460082197A /* Promise+Unwrap.swift */; };
+		871597AE226293460082197A /* Promise+Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159791226293460082197A /* Promise+Aliases.swift */; };
+		871597AF226293460082197A /* PromiseBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159792226293460082197A /* PromiseBlocks.swift */; };
+		871597B0226293460082197A /* Promise+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159793226293460082197A /* Promise+Chain.swift */; };
+		871597B1226293460082197A /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159794226293460082197A /* Await.swift */; };
+		871597B2226293460082197A /* Promise+Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159795226293460082197A /* Promise+Timeout.swift */; };
+		871597B3226293460082197A /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159796226293460082197A /* Async.swift */; };
+		871597B4226293460082197A /* Promise+First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159797226293460082197A /* Promise+First.swift */; };
+		871597B5226293460082197A /* Promise+NoMatterWhat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159798226293460082197A /* Promise+NoMatterWhat.swift */; };
+		871597B6226293460082197A /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87159799226293460082197A /* Promise.swift */; };
+		871597B7226293460082197A /* Promise+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979A226293460082197A /* Promise+Zip.swift */; };
+		871597B8226293460082197A /* Promise+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979B226293460082197A /* Promise+Error.swift */; };
+		871597B9226293460082197A /* Promise+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979C226293460082197A /* Promise+Progress.swift */; };
+		871597BA226293460082197A /* Promise+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979D226293460082197A /* Promise+Validate.swift */; };
+		871597BB226293460082197A /* Promise+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979E226293460082197A /* Promise+Delay.swift */; };
+		871597BC226293460082197A /* Promise+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715979F226293460082197A /* Promise+Then.swift */; };
+		871597BD226293460082197A /* VoidPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597A0226293460082197A /* VoidPromise.swift */; };
+		871597BF226293460082197A /* Promise+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597A2226293460082197A /* Promise+Helpers.swift */; };
+		871597C0226293460082197A /* Promise+nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597A3226293460082197A /* Promise+nil.swift */; };
+		871597C3226295000082197A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597C2226295000082197A /* NetworkRequest.swift */; };
+		871597C52262963C0082197A /* PopularMoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597C42262963C0082197A /* PopularMoviesRequest.swift */; };
+		871597CA226299E90082197A /* Codextended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597C9226299E90082197A /* Codextended.swift */; };
+		871597CC2262A0350082197A /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597CB2262A0350082197A /* MovieListTableViewCell.swift */; };
+		871597CE2262A0610082197A /* TableViewDequeableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597CD2262A0610082197A /* TableViewDequeableModel.swift */; };
+		871597D42262AAD20082197A /* UIEdgeInsets+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597D32262AAD20082197A /* UIEdgeInsets+Initializers.swift */; };
+		871597D62262BB790082197A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597D52262BB790082197A /* ImageService.swift */; };
+		871597DC2263DC020082197A /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597DB2263DC020082197A /* MovieListViewModel.swift */; };
+		871597DE2263EA1C0082197A /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597DD2263EA1C0082197A /* UITableView+Register.swift */; };
+		871597E02263F15B0082197A /* TheMovieDBNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597DF2263F15B0082197A /* TheMovieDBNetworkRequest.swift */; };
+		871597E22263F5EE0082197A /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597E12263F5EE0082197A /* MovieListTests.swift */; };
+		871597E72263F9390082197A /* MovieListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597E62263F9390082197A /* MovieListCoordinator.swift */; };
+		871597EA2263FDE80082197A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871597E92263FDE80082197A /* MovieDetailViewController.swift */; };
+		871598C4226504860082197A /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871598C3226504860082197A /* MovieDetailViewModel.swift */; };
+		871598C6226507290082197A /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871598C5226507290082197A /* FavoriteService.swift */; };
+		871598C8226507430082197A /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871598C7226507430082197A /* StorageService.swift */; };
+		871598CA226507560082197A /* UserDefaultsStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871598C9226507560082197A /* UserDefaultsStorageService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87159756226281FD0082197A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87159739226281FC0082197A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87159740226281FC0082197A;
+			remoteInfo = Delta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87159741226281FC0082197A /* Delta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87159744226281FC0082197A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8715974B226281FD0082197A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8715974E226281FD0082197A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87159750226281FD0082197A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87159755226281FD0082197A /* DeltaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87159759226281FD0082197A /* DeltaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaTests.swift; sourceTree = "<group>"; };
+		8715975B226281FD0082197A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87159767226285460082197A /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		8715976D2262880F0082197A /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		8715977722628B530082197A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8715977922628C090082197A /* MovieListDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDisplayModel.swift; sourceTree = "<group>"; };
+		8715977C226290530082197A /* URL+Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Static.swift"; sourceTree = "<group>"; };
+		87159780226292360082197A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		871597822262925C0082197A /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		87159786226293460082197A /* Promise+Retry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Retry.swift"; sourceTree = "<group>"; };
+		87159787226293460082197A /* PromiseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseState.swift; sourceTree = "<group>"; };
+		87159788226293460082197A /* Promise+Recover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Recover.swift"; sourceTree = "<group>"; };
+		87159789226293460082197A /* Promise+Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Race.swift"; sourceTree = "<group>"; };
+		8715978A226293460082197A /* Promise+Finally.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Finally.swift"; sourceTree = "<group>"; };
+		8715978B226293460082197A /* Promise+BridgeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+BridgeError.swift"; sourceTree = "<group>"; };
+		8715978C226293460082197A /* then.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = then.h; sourceTree = "<group>"; };
+		8715978D226293460082197A /* Await+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Await+Operators.swift"; sourceTree = "<group>"; };
+		8715978E226293460082197A /* WhenAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhenAll.swift; sourceTree = "<group>"; };
+		8715978F226293460082197A /* PromiseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseError.swift; sourceTree = "<group>"; };
+		87159790226293460082197A /* Promise+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Unwrap.swift"; sourceTree = "<group>"; };
+		87159791226293460082197A /* Promise+Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Aliases.swift"; sourceTree = "<group>"; };
+		87159792226293460082197A /* PromiseBlocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseBlocks.swift; sourceTree = "<group>"; };
+		87159793226293460082197A /* Promise+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Chain.swift"; sourceTree = "<group>"; };
+		87159794226293460082197A /* Await.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
+		87159795226293460082197A /* Promise+Timeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Timeout.swift"; sourceTree = "<group>"; };
+		87159796226293460082197A /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		87159797226293460082197A /* Promise+First.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+First.swift"; sourceTree = "<group>"; };
+		87159798226293460082197A /* Promise+NoMatterWhat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+NoMatterWhat.swift"; sourceTree = "<group>"; };
+		87159799226293460082197A /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		8715979A226293460082197A /* Promise+Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Zip.swift"; sourceTree = "<group>"; };
+		8715979B226293460082197A /* Promise+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Error.swift"; sourceTree = "<group>"; };
+		8715979C226293460082197A /* Promise+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Progress.swift"; sourceTree = "<group>"; };
+		8715979D226293460082197A /* Promise+Validate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Validate.swift"; sourceTree = "<group>"; };
+		8715979E226293460082197A /* Promise+Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Delay.swift"; sourceTree = "<group>"; };
+		8715979F226293460082197A /* Promise+Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Then.swift"; sourceTree = "<group>"; };
+		871597A0226293460082197A /* VoidPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidPromise.swift; sourceTree = "<group>"; };
+		871597A1226293460082197A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		871597A2226293460082197A /* Promise+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Helpers.swift"; sourceTree = "<group>"; };
+		871597A3226293460082197A /* Promise+nil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+nil.swift"; sourceTree = "<group>"; };
+		871597C2226295000082197A /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		871597C42262963C0082197A /* PopularMoviesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesRequest.swift; sourceTree = "<group>"; };
+		871597C9226299E90082197A /* Codextended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codextended.swift; sourceTree = "<group>"; };
+		871597CB2262A0350082197A /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
+		871597CD2262A0610082197A /* TableViewDequeableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDequeableModel.swift; sourceTree = "<group>"; };
+		871597D32262AAD20082197A /* UIEdgeInsets+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Initializers.swift"; sourceTree = "<group>"; };
+		871597D52262BB790082197A /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		871597DB2263DC020082197A /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		871597DD2263EA1C0082197A /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		871597DF2263F15B0082197A /* TheMovieDBNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBNetworkRequest.swift; sourceTree = "<group>"; };
+		871597E12263F5EE0082197A /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
+		871597E62263F9390082197A /* MovieListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCoordinator.swift; sourceTree = "<group>"; };
+		871597E92263FDE80082197A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		871598C3226504860082197A /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		871598C5226507290082197A /* FavoriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
+		871598C7226507430082197A /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		871598C9226507560082197A /* UserDefaultsStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8715973E226281FC0082197A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87159752226281FD0082197A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87159738226281FC0082197A = {
+			isa = PBXGroup;
+			children = (
+				87159743226281FC0082197A /* Delta */,
+				87159758226281FD0082197A /* DeltaTests */,
+				87159742226281FC0082197A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87159742226281FC0082197A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87159741226281FC0082197A /* Delta.app */,
+				87159755226281FD0082197A /* DeltaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87159743226281FC0082197A /* Delta */ = {
+			isa = PBXGroup;
+			children = (
+				87159784226293460082197A /* Vendor */,
+				871597642262850A0082197A /* Classes */,
+				87159744226281FC0082197A /* AppDelegate.swift */,
+				8715974B226281FD0082197A /* Assets.xcassets */,
+				8715974D226281FD0082197A /* LaunchScreen.storyboard */,
+				87159750226281FD0082197A /* Info.plist */,
+			);
+			path = Delta;
+			sourceTree = "<group>";
+		};
+		87159758226281FD0082197A /* DeltaTests */ = {
+			isa = PBXGroup;
+			children = (
+				87159759226281FD0082197A /* DeltaTests.swift */,
+				8715975B226281FD0082197A /* Info.plist */,
+				871597E12263F5EE0082197A /* MovieListTests.swift */,
+			);
+			path = DeltaTests;
+			sourceTree = "<group>";
+		};
+		871597642262850A0082197A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8715977122628AD20082197A /* Core */,
+				87159769226287CF0082197A /* Extensions */,
+				87159765226285130082197A /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		87159765226285130082197A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8715977522628B390082197A /* Movies */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		871597662262851E0082197A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				87159767226285460082197A /* MovieListViewController.swift */,
+				871597DB2263DC020082197A /* MovieListViewModel.swift */,
+				871597CB2262A0350082197A /* MovieListTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		87159769226287CF0082197A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8715977B226290410082197A /* Foundation */,
+				8715976A226287D50082197A /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8715976A226287D50082197A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8715976D2262880F0082197A /* UIView+Layout.swift */,
+				871597D32262AAD20082197A /* UIEdgeInsets+Initializers.swift */,
+				871597DD2263EA1C0082197A /* UITableView+Register.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8715977122628AD20082197A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8715977F226292280082197A /* Service */,
+				8715977222628ADE0082197A /* TableView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8715977222628ADE0082197A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				871597CD2262A0610082197A /* TableViewDequeableModel.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		8715977522628B390082197A /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				871597E82263FDD40082197A /* Detail */,
+				8715977E2262921E0082197A /* Service */,
+				8715977622628B450082197A /* Models */,
+				871597662262851E0082197A /* List */,
+				871597E62263F9390082197A /* MovieListCoordinator.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		8715977622628B450082197A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8715977722628B530082197A /* Movie.swift */,
+				8715977922628C090082197A /* MovieListDisplayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8715977B226290410082197A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8715977C226290530082197A /* URL+Static.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8715977E2262921E0082197A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				871597C42262963C0082197A /* PopularMoviesRequest.swift */,
+				871598C5226507290082197A /* FavoriteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8715977F226292280082197A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87159780226292360082197A /* NetworkService.swift */,
+				871597822262925C0082197A /* APIKey.swift */,
+				871597C2226295000082197A /* NetworkRequest.swift */,
+				871597D52262BB790082197A /* ImageService.swift */,
+				871597DF2263F15B0082197A /* TheMovieDBNetworkRequest.swift */,
+				871598C7226507430082197A /* StorageService.swift */,
+				871598C9226507560082197A /* UserDefaultsStorageService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87159784226293460082197A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				871597C8226299E00082197A /* Codextended */,
+				87159785226293460082197A /* then */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		87159785226293460082197A /* then */ = {
+			isa = PBXGroup;
+			children = (
+				87159786226293460082197A /* Promise+Retry.swift */,
+				87159787226293460082197A /* PromiseState.swift */,
+				87159788226293460082197A /* Promise+Recover.swift */,
+				87159789226293460082197A /* Promise+Race.swift */,
+				8715978A226293460082197A /* Promise+Finally.swift */,
+				8715978B226293460082197A /* Promise+BridgeError.swift */,
+				8715978C226293460082197A /* then.h */,
+				8715978D226293460082197A /* Await+Operators.swift */,
+				8715978E226293460082197A /* WhenAll.swift */,
+				8715978F226293460082197A /* PromiseError.swift */,
+				87159790226293460082197A /* Promise+Unwrap.swift */,
+				87159791226293460082197A /* Promise+Aliases.swift */,
+				87159792226293460082197A /* PromiseBlocks.swift */,
+				87159793226293460082197A /* Promise+Chain.swift */,
+				87159794226293460082197A /* Await.swift */,
+				87159795226293460082197A /* Promise+Timeout.swift */,
+				87159796226293460082197A /* Async.swift */,
+				87159797226293460082197A /* Promise+First.swift */,
+				87159798226293460082197A /* Promise+NoMatterWhat.swift */,
+				87159799226293460082197A /* Promise.swift */,
+				8715979A226293460082197A /* Promise+Zip.swift */,
+				8715979B226293460082197A /* Promise+Error.swift */,
+				8715979C226293460082197A /* Promise+Progress.swift */,
+				8715979D226293460082197A /* Promise+Validate.swift */,
+				8715979E226293460082197A /* Promise+Delay.swift */,
+				8715979F226293460082197A /* Promise+Then.swift */,
+				871597A0226293460082197A /* VoidPromise.swift */,
+				871597A1226293460082197A /* Info.plist */,
+				871597A2226293460082197A /* Promise+Helpers.swift */,
+				871597A3226293460082197A /* Promise+nil.swift */,
+			);
+			path = then;
+			sourceTree = "<group>";
+		};
+		871597C8226299E00082197A /* Codextended */ = {
+			isa = PBXGroup;
+			children = (
+				871597C9226299E90082197A /* Codextended.swift */,
+			);
+			path = Codextended;
+			sourceTree = "<group>";
+		};
+		871597E82263FDD40082197A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				871597E92263FDE80082197A /* MovieDetailViewController.swift */,
+				871598C3226504860082197A /* MovieDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87159740226281FC0082197A /* Delta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8715975E226281FD0082197A /* Build configuration list for PBXNativeTarget "Delta" */;
+			buildPhases = (
+				8715973D226281FC0082197A /* Sources */,
+				8715973E226281FC0082197A /* Frameworks */,
+				8715973F226281FC0082197A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Delta;
+			productName = Delta;
+			productReference = 87159741226281FC0082197A /* Delta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87159754226281FD0082197A /* DeltaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87159761226281FD0082197A /* Build configuration list for PBXNativeTarget "DeltaTests" */;
+			buildPhases = (
+				87159751226281FD0082197A /* Sources */,
+				87159752226281FD0082197A /* Frameworks */,
+				87159753226281FD0082197A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87159757226281FD0082197A /* PBXTargetDependency */,
+			);
+			name = DeltaTests;
+			productName = DeltaTests;
+			productReference = 87159755226281FD0082197A /* DeltaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87159739226281FC0082197A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bruno Bilescky";
+				TargetAttributes = {
+					87159740226281FC0082197A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					87159754226281FD0082197A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 87159740226281FC0082197A;
+					};
+				};
+			};
+			buildConfigurationList = 8715973C226281FC0082197A /* Build configuration list for PBXProject "Delta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87159738226281FC0082197A;
+			productRefGroup = 87159742226281FC0082197A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87159740226281FC0082197A /* Delta */,
+				87159754226281FD0082197A /* DeltaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8715973F226281FC0082197A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8715974F226281FD0082197A /* LaunchScreen.storyboard in Resources */,
+				8715974C226281FD0082197A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87159753226281FD0082197A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8715973D226281FC0082197A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871597AA226293460082197A /* Await+Operators.swift in Sources */,
+				871597B2226293460082197A /* Promise+Timeout.swift in Sources */,
+				871597CE2262A0610082197A /* TableViewDequeableModel.swift in Sources */,
+				871597D42262AAD20082197A /* UIEdgeInsets+Initializers.swift in Sources */,
+				8715977A22628C090082197A /* MovieListDisplayModel.swift in Sources */,
+				8715976E2262880F0082197A /* UIView+Layout.swift in Sources */,
+				871597E72263F9390082197A /* MovieListCoordinator.swift in Sources */,
+				871597BC226293460082197A /* Promise+Then.swift in Sources */,
+				871597B4226293460082197A /* Promise+First.swift in Sources */,
+				871597BA226293460082197A /* Promise+Validate.swift in Sources */,
+				871597AF226293460082197A /* PromiseBlocks.swift in Sources */,
+				87159781226292360082197A /* NetworkService.swift in Sources */,
+				871597DC2263DC020082197A /* MovieListViewModel.swift in Sources */,
+				871597B0226293460082197A /* Promise+Chain.swift in Sources */,
+				871597C3226295000082197A /* NetworkRequest.swift in Sources */,
+				871597B8226293460082197A /* Promise+Error.swift in Sources */,
+				871597BD226293460082197A /* VoidPromise.swift in Sources */,
+				871597AE226293460082197A /* Promise+Aliases.swift in Sources */,
+				871597BF226293460082197A /* Promise+Helpers.swift in Sources */,
+				871598C6226507290082197A /* FavoriteService.swift in Sources */,
+				871597B3226293460082197A /* Async.swift in Sources */,
+				871597A5226293460082197A /* PromiseState.swift in Sources */,
+				871597B9226293460082197A /* Promise+Progress.swift in Sources */,
+				871597AB226293460082197A /* WhenAll.swift in Sources */,
+				871598CA226507560082197A /* UserDefaultsStorageService.swift in Sources */,
+				871597AC226293460082197A /* PromiseError.swift in Sources */,
+				8715977D226290530082197A /* URL+Static.swift in Sources */,
+				871597A9226293460082197A /* Promise+BridgeError.swift in Sources */,
+				87159745226281FC0082197A /* AppDelegate.swift in Sources */,
+				871597C52262963C0082197A /* PopularMoviesRequest.swift in Sources */,
+				871597EA2263FDE80082197A /* MovieDetailViewController.swift in Sources */,
+				871597A7226293460082197A /* Promise+Race.swift in Sources */,
+				871597BB226293460082197A /* Promise+Delay.swift in Sources */,
+				871597A8226293460082197A /* Promise+Finally.swift in Sources */,
+				8715977822628B530082197A /* Movie.swift in Sources */,
+				871597D62262BB790082197A /* ImageService.swift in Sources */,
+				871597A4226293460082197A /* Promise+Retry.swift in Sources */,
+				871597A6226293460082197A /* Promise+Recover.swift in Sources */,
+				87159768226285460082197A /* MovieListViewController.swift in Sources */,
+				871597DE2263EA1C0082197A /* UITableView+Register.swift in Sources */,
+				871597CC2262A0350082197A /* MovieListTableViewCell.swift in Sources */,
+				871597B7226293460082197A /* Promise+Zip.swift in Sources */,
+				871598C4226504860082197A /* MovieDetailViewModel.swift in Sources */,
+				871597B1226293460082197A /* Await.swift in Sources */,
+				871597B6226293460082197A /* Promise.swift in Sources */,
+				871597C0226293460082197A /* Promise+nil.swift in Sources */,
+				871597CA226299E90082197A /* Codextended.swift in Sources */,
+				871598C8226507430082197A /* StorageService.swift in Sources */,
+				871597AD226293460082197A /* Promise+Unwrap.swift in Sources */,
+				871597832262925C0082197A /* APIKey.swift in Sources */,
+				871597E02263F15B0082197A /* TheMovieDBNetworkRequest.swift in Sources */,
+				871597B5226293460082197A /* Promise+NoMatterWhat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87159751226281FD0082197A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871597E22263F5EE0082197A /* MovieListTests.swift in Sources */,
+				8715975A226281FD0082197A /* DeltaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87159757226281FD0082197A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87159740226281FC0082197A /* Delta */;
+			targetProxy = 87159756226281FD0082197A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8715974D226281FD0082197A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8715974E226281FD0082197A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8715975C226281FD0082197A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8715975D226281FD0082197A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8715975F226281FD0082197A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9V4R936N;
+				INFOPLIST_FILE = Delta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgondim.Delta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87159760226281FD0082197A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9V4R936N;
+				INFOPLIST_FILE = Delta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgondim.Delta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87159762226281FD0082197A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9V4R936N;
+				INFOPLIST_FILE = DeltaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgondim.DeltaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delta.app/Delta";
+			};
+			name = Debug;
+		};
+		87159763226281FD0082197A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K9V4R936N;
+				INFOPLIST_FILE = DeltaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgondim.DeltaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delta.app/Delta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8715973C226281FC0082197A /* Build configuration list for PBXProject "Delta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8715975C226281FD0082197A /* Debug */,
+				8715975D226281FD0082197A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8715975E226281FD0082197A /* Build configuration list for PBXNativeTarget "Delta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8715975F226281FD0082197A /* Debug */,
+				87159760226281FD0082197A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87159761226281FD0082197A /* Build configuration list for PBXNativeTarget "DeltaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87159762226281FD0082197A /* Debug */,
+				87159763226281FD0082197A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87159739226281FC0082197A /* Project object */;
+}
