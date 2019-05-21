@@ -137,7 +137,6 @@ class MovieListTableViewCell: UITableViewCell {
         else {
             favoriteButton.setImage(UIImage(named: "heart_unselected"), for: .normal)
         }
-        self.setNeedsDisplay()
     }
     
     func updatePoster(_ image: UIImage, for movie: MovieListDisplayModel) {
